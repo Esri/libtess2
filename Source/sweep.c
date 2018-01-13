@@ -1123,10 +1123,10 @@ static void InitEdgeDict( TESStesselator *tess )
 
         /* If the bbox is empty, ensure that sentinels are not coincident by
            slightly enlarging it. */
-	smin = tess->bmin[0] - (w > 0 ? w : 0.01);
-        smax = tess->bmax[0] + (w > 0 ? w : 0.01);
-        tmin = tess->bmin[1] - (h > 0 ? h : 0.01);
-        tmax = tess->bmax[1] + (h > 0 ? h : 0.01);
+	smin = tess->bmin[0] - w ;
+        smax = tess->bmax[0] + w;
+        tmin = tess->bmin[1] - h;
+        tmax = tess->bmax[1] + h;
 
 	AddSentinel( tess, smin, smax, tmin );
 	AddSentinel( tess, smin, smax, tmax );

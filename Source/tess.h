@@ -62,7 +62,7 @@ struct TESStesselator {
 	TESSreal bmax[2];
 
 	/*** state needed for the line sweep ***/
-	int	windingRule;	/* rule for determining polygon interior */
+	int windingRule;	/* rule for determining polygon interior */
 
 	Dict *dict;		/* edge dictionary for sweep line */
 	PriorityQ *pq;		/* priority queue of vertex events */
