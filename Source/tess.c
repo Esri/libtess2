@@ -255,9 +255,7 @@ void tessProjectPolygon( TESStesselator *tess )
 		v->s = Dot( v->coords, sUnit );
 		v->t = Dot( v->coords, tUnit );
 	}
-	if( computedNormal ) {
-		CheckOrientation( tess );
-	}
+	CheckOrientation( tess );
 
 	/* Compute ST bounds. */
 	first = 1;
