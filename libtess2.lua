@@ -1,4 +1,4 @@
-project "libtess2"
+project "tess2"
 
 dofile(_BUILD_DIR .. "/static_library.lua")
 
@@ -24,9 +24,6 @@ files {
 if (_PLATFORM_ANDROID) then
 end
 
-if (_PLATFORM_COCOA) then
-end
-
 if (_PLATFORM_IOS) then
 end
 
@@ -37,7 +34,4 @@ if (_PLATFORM_MACOS) then
 end
 
 if (_PLATFORM_WINDOWS) then
-end
-
-if (_PLATFORM_WINUWP) then
 end

@@ -2,7 +2,7 @@ from conans import ConanFile
 
 
 class Tess2Conan(ConanFile):
-    name = "tess2"
+    name = "libtess2"
     version = "1.0.1"
     url = "https://github.com/Esri/libtess2/tree/runtimecore"
     license = "https://github.com/Esri/libtess2/blob/runtimecore/LICENSE.txt"
@@ -20,4 +20,4 @@ class Tess2Conan(ConanFile):
 
         # libraries
         output = "output/" + str(self.settings.platform_architecture_target) + "/staticlib"
-        self.copy("*" + self.name + "*", src=base + "../../" + output, dst=output)
+        self.copy("*tess2*", src=base + "../../" + output, dst=output)
